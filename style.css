@@ -9,20 +9,23 @@
 
 /* ▼▼▼▼▼▼▼▼▼▼ Share Style Star Here ▼▼▼▼▼▼▼▼▼▼ */
 * {
-    margin: 20px auto;
+    margin: 0 auto;
     font-family: Quicksand;
 }
 
 .dark-color {
     color: rgb(17, 17, 17);
 }
-.orange-color{
+
+.orange-color {
     color: rgb(254, 163, 1);
 }
-.skyblue-color{
+
+.skyblue-color {
     color: rgb(1, 172, 253);
 }
-.gray-color{
+
+.gray-color {
     color: rgb(128, 128, 128);
 }
 
@@ -39,6 +42,9 @@
 /* ▲▲▲▲▲▲▲▲▲▲ Share Style End ▲▲▲▲▲▲▲▲▲▲ */
 
 /* ▼▼▼▼▼▼▼▼▼▼ Header Menubar Design Start ▼▼▼▼▼▼▼▼▼▼ */
+.banner-conteiner{
+    margin-top: 1.25rem;
+}
 .name-logo {
     align-items: center;
     gap: .5rem;
@@ -140,27 +146,35 @@ hr {
     margin: 0 auto;
     align-items: center;
 }
-.banner-description{
+
+.banner-description {
     max-width: 40rem;
 }
-.banner-img img{
+
+.banner-img img {
     max-width: 100%;
 }
-.vision-title{
+
+.vision-title {
     font-weight: var(--font-weight700);
     font-size: 3.5rem;
     line-height: 3.8rem;
 }
-.vision-title br{
+
+.vision-title br {
     margin-top: 0px;
     margin-bottom: 0px;
 }
-.banner-sub-title{
+
+.banner-sub-title {
     font-size: 1.25rem;
     font-weight: 400;
     color: rgb(17, 17, 17);
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
 }
-.btn-enroll{
+
+.btn-enroll {
     background-color: black;
     font-size: var(--font-size);
     font-weight: var(--font-weight700);
@@ -169,7 +183,7 @@ hr {
 /* ▲▲▲▲▲▲▲▲▲▲ Banner Content Design End ▲▲▲▲▲▲▲▲▲▲ */
 
 
-/* ▼▼▼▼▼ Header Menubar Design Responsive start for Mobile ▼▼▼▼▼ */
+/* ▼▼▼▼▼ Design Responsive start for Mobile ▼▼▼▼▼ */
 @media screen and (max-width: 576px) {
 
     .academy-name,
@@ -179,9 +193,24 @@ hr {
     }
 
     .menu-icon,
-    hr {
+    hr, .btn-enroll {
         display: block;
     }
+    .banner-content{
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 20px;
+    }
+    .vision-title{
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+    .banner-sub-title{
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.1rem;
+    }
+
 }
 
-/* ▲▲▲▲▲ Header Menubar Design Responsive end for Mobile ▲▲▲▲▲ */
+/* ▲▲▲▲▲ Design Responsive end for Mobile ▲▲▲▲▲ */
