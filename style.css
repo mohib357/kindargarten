@@ -7,7 +7,7 @@
     font-style: normal;
 }
 
-/* ======= Share Style Star Here ======= */
+/* ▼▼▼▼▼▼▼▼▼▼ Share Style Star Here ▼▼▼▼▼▼▼▼▼▼ */
 * {
     margin: 20px auto;
     font-family: Quicksand;
@@ -26,15 +26,15 @@
     --font-weight: 500;
 }
 
-/* ======= Share Style End ======= */
+/* ▲▲▲▲▲▲▲▲▲▲ Share Style End ▲▲▲▲▲▲▲▲▲▲ */
 
-
+/* ▼▼▼▼▼▼▼▼▼▼ Header Menubar Design Start ▼▼▼▼▼▼▼▼▼▼ */
 .name-logo {
     align-items: center;
     gap: .5rem;
 }
 
-.name-logo > img{
+.name-logo>img {
     width: 65px;
     height: 65px;
 }
@@ -67,7 +67,11 @@
     font-size: var(--font-size);
     font-weight: var(--font-weight);
 }
-.home:hover, .about:hover, .facilities:hover, .admission:hover{
+
+.home:hover,
+.about:hover,
+.facilities:hover,
+.admission:hover {
     background-color: rgb(165, 194, 246);
     border-radius: 10px;
 }
@@ -101,4 +105,24 @@
 .btn:hover {
     background-color: rgb(192, 160, 104);
     color: rgb(9, 100, 237);
+}
+.menu-icon{
+    display: none;
+    width: 2rem;
+    height: 2rem;
+}
+hr{
+    display: none;
+    border: 0.5px solid rgb(254, 163, 1);
+}
+
+/* ▲▲▲▲▲▲▲▲▲▲ Header Menubar Design End ▲▲▲▲▲▲▲▲▲▲ */
+/* ▼▼▼▼▼▼▼ Header Menubar Design Responsive for Mobile ▼▼▼▼▼▼▼ */
+@media screen and (max-width: 576px) {
+    .academy-name, .head-menu, .btn{
+        display: none;
+    }
+    .menu-icon, hr{
+        display: block;
+    }
 }
