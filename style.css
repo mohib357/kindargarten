@@ -16,6 +16,15 @@
 .dark-color {
     color: rgb(17, 17, 17);
 }
+.orange-color{
+    color: rgb(254, 163, 1);
+}
+.skyblue-color{
+    color: rgb(1, 172, 253);
+}
+.gray-color{
+    color: rgb(128, 128, 128);
+}
 
 .display-flex {
     display: flex;
@@ -24,6 +33,7 @@
 :root {
     --font-size: 1.25rem;
     --font-weight: 500;
+    --font-weight700: 700;
 }
 
 /* ▲▲▲▲▲▲▲▲▲▲ Share Style End ▲▲▲▲▲▲▲▲▲▲ */
@@ -106,23 +116,72 @@
     background-color: rgb(192, 160, 104);
     color: rgb(9, 100, 237);
 }
-.menu-icon{
+
+.menu-icon {
     display: none;
     width: 2rem;
     height: 2rem;
 }
-hr{
+
+hr {
     display: none;
     border: 0.5px solid rgb(254, 163, 1);
 }
 
 /* ▲▲▲▲▲▲▲▲▲▲ Header Menubar Design End ▲▲▲▲▲▲▲▲▲▲ */
-/* ▼▼▼▼▼▼▼ Header Menubar Design Responsive for Mobile ▼▼▼▼▼▼▼ */
+
+
+/* ▼▼▼▼▼▼▼▼▼▼ Banner Content Design Start ▼▼▼▼▼▼▼▼▼▼ */
+
+.banner-content {
+    gap: 3rem;
+    justify-content: space-between;
+    padding: 1.8rem;
+    margin: 0 auto;
+    align-items: center;
+}
+.banner-description{
+    max-width: 40rem;
+}
+.banner-img img{
+    max-width: 100%;
+}
+.vision-title{
+    font-weight: var(--font-weight700);
+    font-size: 3.5rem;
+    line-height: 3.8rem;
+}
+.vision-title br{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.banner-sub-title{
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: rgb(17, 17, 17);
+}
+.btn-enroll{
+    background-color: black;
+    font-size: var(--font-size);
+    font-weight: var(--font-weight700);
+}
+
+/* ▲▲▲▲▲▲▲▲▲▲ Banner Content Design End ▲▲▲▲▲▲▲▲▲▲ */
+
+
+/* ▼▼▼▼▼ Header Menubar Design Responsive start for Mobile ▼▼▼▼▼ */
 @media screen and (max-width: 576px) {
-    .academy-name, .head-menu, .btn{
+
+    .academy-name,
+    .head-menu,
+    .btn {
         display: none;
     }
-    .menu-icon, hr{
+
+    .menu-icon,
+    hr {
         display: block;
     }
 }
+
+/* ▲▲▲▲▲ Header Menubar Design Responsive end for Mobile ▲▲▲▲▲ */
