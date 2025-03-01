@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+.quicksand-font {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* ======= Share Style Star Here ======= */
+* {
+    margin: 20px auto;
+    font-family: Quicksand;
+}
+
+.dark-color {
+    color: rgb(17, 17, 17);
+}
+
+.display-flex {
+    display: flex;
+}
+
+:root {
+    --font-size: 1.25rem;
+    --font-weight: 500;
+}
+
+/* ======= Share Style End ======= */
+
+
+.name-logo {
+    align-items: center;
+    gap: .5rem;
+}
+
+.name-logo > img{
+    width: 65px;
+    height: 65px;
+}
+
+.academy-name {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.home a {
+    color: rgb(246, 1, 254);
+    font-size: var(--font-size);
+    font-weight: 700;
+}
+
+.about a {
+    color: rgb(1, 172, 253);
+    font-size: var(--font-size);
+    font-weight: var(--font-weight);
+}
+
+.facilities a {
+    color: rgb(255, 76, 5);
+    font-size: var(--font-size);
+    font-weight: var(--font-weight);
+}
+
+.admission a {
+    color: rgb(23, 151, 6);
+    font-size: var(--font-size);
+    font-weight: var(--font-weight);
+}
+.home:hover, .about:hover, .facilities:hover, .admission:hover{
+    background-color: rgb(165, 194, 246);
+    border-radius: 10px;
+}
+
+.banner-head-conteiner {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.head-menu {
+    list-style: none;
+    gap: 2rem;
+}
+
+.head-menu a {
+    text-decoration: none;
+}
+
+.btn {
+    border-radius: .8rem;
+    background: rgb(254, 163, 1);
+    padding: .62rem 2.2em;
+    margin: 0 auto;
+    border: none;
+    color: white;
+    font-size: var(--font-size);
+    font-weight: var(--font-weight);
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgb(192, 160, 104);
+    color: rgb(9, 100, 237);
+}
