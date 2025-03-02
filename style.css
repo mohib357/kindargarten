@@ -33,6 +33,10 @@
     display: flex;
 }
 
+.line-height {
+    line-height: 1.77rem;
+}
+
 :root {
     --font-size: 1.25rem;
     --font-weight: 500;
@@ -42,9 +46,10 @@
 /* ▲▲▲▲▲▲▲▲▲▲ Share Style End ▲▲▲▲▲▲▲▲▲▲ */
 
 /* ▼▼▼▼▼▼▼▼▼▼ Header Menubar Design Start ▼▼▼▼▼▼▼▼▼▼ */
-.banner-conteiner{
+.banner-conteiner {
     margin-top: 1.25rem;
 }
+
 .name-logo {
     align-items: center;
     gap: .5rem;
@@ -183,6 +188,92 @@ hr {
 /* ▲▲▲▲▲▲▲▲▲▲ Banner Content Design End ▲▲▲▲▲▲▲▲▲▲ */
 
 
+/* ▼▼▼▼▼▼▼▼▼▼ Card Section Design Start ▼▼▼▼▼▼▼▼▼▼ */
+
+.card-section {
+    background-image: url('assets/bg.png');
+    padding: 4rem;
+}
+
+.card-conteiner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    flex: 1;
+    gap: 1.7rem;
+    margin: 0 auto;
+    max-height: 480px;
+}
+
+.card-section h1 {
+    font-weight: var(--font-weight700);
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.card-1,
+.card-2,
+.card-3 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 100%;
+    gap: 2rem;
+    padding:1.5rem;
+}
+
+.card-1 {
+    border: 0.94px solid rgb(222, 245, 255);
+    border-radius: 1.17rem;
+    box-shadow: inset 0px 0px 1.76rem 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(222, 245, 255), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
+}
+
+.card-2 {
+    border: 0.94px solid rgb(255, 244, 220);
+    border-radius: 1.17rem;
+    box-shadow: inset 0px 0px 1.76rem 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(255, 244, 220), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
+}
+
+.card-3 {
+    border: 0.94px solid rgb(242, 232, 255);
+    border-radius: 1.17rem;
+    box-shadow: inset 0px 0px 1.76rem 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(238, 225, 255), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: var(--font-weight700);
+}
+
+.card-description {
+    font-weight: var(--font-weight);
+}
+
+.readmore-1, .readmore-2, .readmore-3 {
+    font-size: 1rem;
+    font-weight: var(--font-weight700);
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.readmore-1{
+    color: rgb(100, 200, 255);
+}
+.readmore-2{
+    color: rgb(240, 170, 0);
+}
+.readmore-3{
+    color: rgb(135, 0, 255);
+}
+
+
+/* ▲▲▲▲▲▲▲▲▲▲ Card Section Design End ▲▲▲▲▲▲▲▲▲▲ */
+
+
 /* ▼▼▼▼▼ Design Responsive start for Mobile ▼▼▼▼▼ */
 @media screen and (max-width: 576px) {
 
@@ -193,19 +284,23 @@ hr {
     }
 
     .menu-icon,
-    hr, .btn-enroll {
+    hr,
+    .btn-enroll {
         display: block;
     }
-    .banner-content{
+
+    .banner-content {
         flex-direction: column-reverse;
         text-align: center;
         gap: 20px;
     }
-    .vision-title{
+
+    .vision-title {
         font-size: 2rem;
         line-height: 2.5rem;
     }
-    .banner-sub-title{
+
+    .banner-sub-title {
         font-size: 14px;
         font-weight: 500;
         line-height: 1.1rem;
