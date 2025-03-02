@@ -202,6 +202,7 @@ hr {
     gap: 1.7rem;
     margin: 0 auto;
     max-height: 480px;
+    margin-bottom: 20px;
 }
 
 .card-section h1 {
@@ -288,12 +289,36 @@ hr {
 /* ▲▲▲▲▲▲▲▲▲▲ Card Section Design End ▲▲▲▲▲▲▲▲▲▲ */
 
 
+/* ▼▼▼▼▼▼▼▼▼▼ change button Design Start ▼▼▼▼▼▼▼▼▼▼ */
+
+.change-btn {
+    text-align: center;
+    margin: 80px auto;
+}
+
+.change-btn span {
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    padding: 17px 25px;
+    color: white;
+    font-weight: 800;
+    font-size: 1.5rem;
+    background: rgb(254, 163, 1);
+    text-align: center;
+    margin: 5px;
+    border: 1px solid rgb(193, 182, 182);
+}
+
+/* ▲▲▲▲▲▲▲▲▲▲ change button Design End ▲▲▲▲▲▲▲▲▲▲ */
+
 /* ▼▼▼▼▼ Design Responsive start for Mobile ▼▼▼▼▼ */
 @media screen and (max-width: 576px) {
 
     .academy-name,
     .head-menu,
-    .btn {
+    .btn,
+    .change-btn {
         display: none;
     }
 
