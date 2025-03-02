@@ -219,7 +219,7 @@ hr {
     text-align: center;
     height: 100%;
     gap: 2rem;
-    padding:1.5rem;
+    padding: 1.5rem;
 }
 
 .card-1 {
@@ -252,7 +252,9 @@ hr {
     font-weight: var(--font-weight);
 }
 
-.readmore-1, .readmore-2, .readmore-3 {
+.readmore-1,
+.readmore-2,
+.readmore-3 {
     font-size: 1rem;
     font-weight: var(--font-weight700);
     background: none;
@@ -260,13 +262,25 @@ hr {
     cursor: pointer;
     margin-top: 10px;
 }
-.readmore-1{
+
+.readmore-1:hover,
+.readmore-2:hover,
+.readmore-3:hover {
+    background: rgb(134, 134, 230);
+    padding: 5px;
+    border-radius: 18px;
+    border: 1px solid gray;
+}
+
+.readmore-1 {
     color: rgb(100, 200, 255);
 }
-.readmore-2{
+
+.readmore-2 {
     color: rgb(240, 170, 0);
 }
-.readmore-3{
+
+.readmore-3 {
     color: rgb(135, 0, 255);
 }
 
@@ -304,6 +318,28 @@ hr {
         font-size: 14px;
         font-weight: 500;
         line-height: 1.1rem;
+    }
+
+    .card-section {
+        padding: 2rem;
+    }
+
+    .card-conteiner {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .card-1,
+    .card-2,
+    .card-3 {
+        height: auto;
+    }
+
+    .card-description {
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
 }
