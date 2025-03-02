@@ -418,6 +418,25 @@ hr {
     padding: 10px 3rem;
     margin: 4rem auto;
 }
+footer{
+    background: linear-gradient(135deg, orange 60%, cyan);
+    height: 500px;
+    align-items: center;
+    padding: 10px;
+}
+.footer-title{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+.footer-title img{
+    width: 80px;
+    height: 80px;
+}
+.footer-title-content{
+    flex: 1;
+    margin-left: 140px;
+}
 
 /* ▼▼▼▼▼ Design Responsive start for Mobile ▼▼▼▼▼ */
 @media screen and (max-width: 576px) {
