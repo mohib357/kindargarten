@@ -323,6 +323,40 @@ hr {
     grid-template-rows: repeat(2, 1fr);
     padding: 4rem;
     max-height: 630px;
+    gap: 1rem;
+}
+
+.stories-card-conteiner button {
+    position: relative;
+    border-radius: 50px;
+    background: rgb(60, 216, 232);
+    color: rgb(255, 255, 255);
+    font-size: 1.1rem;
+    font-weight: var(--font-weight);
+    text-transform: capitalize;
+    padding: 12px 18px;
+    text-align: center;
+    transform: translateY(-25px);
+    margin-left: 38px;
+}
+
+.stories-card-conteiner img {
+    border-radius: 16px 16px 0px 0px;
+}
+
+.stories-card-conteiner h3 {
+    font-size: 1.5rem;
+    font-weight: var(--font-weight700);
+    line-height: 2.4rem;
+}
+
+.stories-card-description>h3 {
+    margin-bottom: 1.5rem;
+}
+
+.stories-card-conteiner p {
+    font-size: 1rem;
+    font-weight: var(--font-weight);
 }
 
 .stories-card-1 {
@@ -330,8 +364,36 @@ hr {
     border-radius: 16px;
     background: rgb(255, 255, 255);
 }
-.stories-card-description{
+
+.stories-card-2, .stories-card-3, .stories-card-4, .stories-card-5 {
+    border-radius: 16px;
+    background: rgb(255, 255, 255);
+    width: 290px;
+    height: 300px;
+}
+
+.stories-card-2 h3, .stories-card-3 h3, .stories-card-4 h3, .stories-card-5 h3 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.stories-card-2 button, .stories-card-4 button, .stories-card-5 button {
+    border-radius: 50px;
+    background: rgb(149, 178, 38);
+    padding: 9px 15px;
+}
+.stories-card-3 button {
+    border-radius: 50px;
+    background: rgb(93, 88, 240);
+    padding: 9px 15px;
+}
+
+.stories-card-description {
     padding: 30px;
+}
+
+.card-2-description {
+    padding: 0 30px;
 }
 
 /* ▼▼▼▼▼ Design Responsive start for Mobile ▼▼▼▼▼ */
