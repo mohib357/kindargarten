@@ -145,6 +145,33 @@ hr {
 
 /* ▲▲▲▲▲▲▲▲▲▲ Header Menubar Design End ▲▲▲▲▲▲▲▲▲▲ */
 
+@keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+.marquee{
+    height: 2rem;
+    margin: 20px auto;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: rgb(4, 150, 4);
+    background: rgb(223, 179, 189);
+    display: block;
+    white-space: nowrap;
+    text-align: center;
+    width: fit-content;
+    padding: 5px 15px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+.marquee p{
+    animation: marquee 35s linear infinite;
+    overflow: hidden;
+    display: inline-block;
+    white-space: nowrap;
+    min-width: 100%;
+}
 
 /* ▼▼▼▼▼▼▼▼▼▼ Banner Content Design Start ▼▼▼▼▼▼▼▼▼▼ */
 
@@ -312,6 +339,10 @@ hr {
     text-align: center;
     margin: 5px;
     border: 1px solid rgb(193, 182, 182);
+    cursor: pointer;
+}
+.change-btn span:hover{
+    background: rgb(245, 199, 120);
 }
 
 /* ▲▲▲▲▲▲▲▲▲▲ change button Design End ▲▲▲▲▲▲▲▲▲▲ */
@@ -418,24 +449,73 @@ hr {
     padding: 10px 3rem;
     margin: 4rem auto;
 }
-footer{
-    background: linear-gradient(135deg, orange 60%, cyan);
-    height: 500px;
-    align-items: center;
-    padding: 10px;
+
+.footer-section {
+    background: linear-gradient(-190deg, orange 40%, cyan);
 }
-.footer-title{
+
+.footer-content {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 120px;
+    gap: 20px;
 }
-.footer-title img{
+
+.logo-name {
+    gap: 5px;
+    margin-bottom: 2rem;
+}
+
+.logo-name img {
     width: 80px;
     height: 80px;
 }
-.footer-title-content{
-    flex: 1;
-    margin-left: 140px;
+
+.logo-name h1 {
+    color: rgb(255, 255, 255);
+    font-size: 2.5rem;
+    font-weight: var(--font-weight700);
+    line-height: 2.4rem;
+    text-align: left;
+    margin-right: 100px;
+}
+
+footer p {
+    color: rgb(255, 255, 255);
+    font-size: var(--font-size);
+    font-weight: 300;
+    line-height: 1.5rem;
+    text-align: left;
+}
+
+.footer-about {
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footer-about h2 {
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    font-weight: var(--font-weight700);
+    text-align: left;
+}
+
+.footer-about h3 {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 400;
+    }
+
+.social-conteier {
+    margin-bottom: 2rem;
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    font-weight: var(--font-weight700);
+    letter-spacing: 2px;
+}
+
+.social-link {
+    gap: 5px;
 }
 
 /* ▼▼▼▼▼ Design Responsive start for Mobile ▼▼▼▼▼ */
@@ -452,8 +532,15 @@ footer{
     .menu-icon,
     hr,
     .btn-enroll,
-    .hide-d, .viwe-btn {
+    .hide-d,
+    .viwe-btn {
         display: block;
+    }
+    .menu-icon{
+        cursor: pointer;
+    }
+    .menu-icon:hover{
+        background: rgb(236, 233, 233);
     }
 
     .banner-content {
@@ -550,6 +637,22 @@ footer{
         transform: translateY(-15px);
         margin-left: 20px;
     }
+    .footer-content{
+        grid-template-columns: repeat(1, 1fr);
+        padding: 100px 20px;
+        gap: 40px;
+    }
+    @keyframes marquee {
+        from { transform: translateX(100vw); }
+        to { transform: translateX(-100%); }
+    }
+    
+    .marquee{
+        width: auto;
+        margin: 20px 20px;
+        padding: 2px 5px;
+    }
+    
 }
 
 /* ▲▲▲▲▲ Design Responsive end for Mobile ▲▲▲▲▲ */
